@@ -1,0 +1,46 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 1rem 2rem; 
+}
+.navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.navbar-links li{
+    margin: 0 2rem;
+    cursor: pointer;
+    
+}
+.navbar-links li:hover{
+    color: var(--color-red);
+}
+
+.navbar-signup{
+    width: 7rem;
+    height: 2rem;
+    border-radius: 50px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+}
+.navbar-signup a{
+    margin: 0 1rem;
+    text-decoration: none;
+}
+.navbar-signup:hover{
+    transition: 0.4s ease;
+    opacity: 90%;
+}
