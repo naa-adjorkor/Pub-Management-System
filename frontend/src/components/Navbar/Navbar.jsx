@@ -34,9 +34,11 @@ export const Navbar = () => {
                         <li className='link-items'><a href='#menu'>Menu</a></li>
                         <li className='link-items'><a href='#contact'>Contact</a></li>
                     </ul>
+                    <div className='navbar-smallscreen-button'>
                     <button className='navbar-smallscreen-signup'>
                         <a href='#signup'>Sign Up</a>
                     </button>
+                    </div>
                 </div>
             )}
         </div>
