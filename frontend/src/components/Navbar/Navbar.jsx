@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {MdOutlineRestaurantMenu} from 'react-icons/md';
+
 
 export const Navbar = () => {
     const [toogleMenu, setToogleMenu] = useState(false)
@@ -12,13 +14,13 @@ export const Navbar = () => {
             <p>LOGO</p>
         </div>
         <ul className='navbar-links'>
-            <li className='link-items'><a href='#home'>Home</a></li>
-            <li className='link-items'><a href='#about'>About</a></li>
-            <li className='link-items'><a href='#menu'>Menu</a></li>
-            <li className='link-items'><a href='#contact'>Contact</a></li>
+            <li className='p__opensans link-items'><Link to='/Home'>Home</Link></li>
+            <li className='p__opensans link-items'><Link to='/About'>About</Link></li>
+            <li className='p__opensans link-items'><Link to='/Menu'>Menu</Link></li>
+            <li className='p__opensans link-items'><Link to='/Contact'>Contact</Link></li>
         </ul>
-        <button className='navbar-signup'>
-            <a href='#signup'>Sign Up</a>
+        <button className='navbar-signup p__opensans'>
+            <a href='/Signup'>Sign Up</a>
         </button>
         
         
@@ -27,16 +29,16 @@ export const Navbar = () => {
 
             {toogleMenu && (
                 <div className='navbar-smallscreen__overlay slide-bottom'>
-                <MdOutlineRestaurantMenu fontSize={28} className='overlay__close' onClick={() =>setToogleMenu(false)}/>
+                <MdOutlineRestaurantMenu fontSize={28} className='overlay__close flex__center' onClick={() =>setToogleMenu(false)}/>
                     <ul className='navbar-smallscreen-links'>
-                        <li className='link-items'><a href='#home'>Home</a></li>
-                        <li className='link-items'><a href='#about'>About</a></li>
-                        <li className='link-items'><a href='#menu'>Menu</a></li>
-                        <li className='link-items'><a href='#contact'>Contact</a></li>
+                        <li className='p__opensans link-items'><Link to='/Home'>Home</Link></li>
+                        <li className='p__opensans link-items'><Link to='/About'>About</Link></li>
+                        <li className='p__opensans link-items'><Link to='/Menu'>Menu</Link></li>
+                        <li className='p__opensans link-items'><Link to='/Contact'>Contact</Link></li>
                     </ul>
                     <div className='navbar-smallscreen-button'>
-                    <button className='navbar-smallscreen-signup'>
-                        <a href='#signup'>Sign Up</a>
+                    <button className='navbar-smallscreen-signup p__opensans'>
+                        <Link to='/Signup'>Sign Up</Link>
                     </button>
                     </div>
                 </div>
