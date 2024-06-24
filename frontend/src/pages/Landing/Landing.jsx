@@ -11,7 +11,6 @@ export const Landing = () => {
         <Navbar/>
         <Header/>
         <AboutUs/>
-        <SpecialMenu/>
         <Intro/>
     </>
   )
