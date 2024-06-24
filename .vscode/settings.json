@@ -4,5 +4,10 @@
         "smallcreen",
         "smallscreen",
         "Toogle"
+    ],
+    "cSpell.ignoreWords": [
+        "aboutus",
+        "headtext",
+        "opensans"
     ]
 }

@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import pubLogo from './../../assets/pub_logo.png';
 import './Navbar.css';
-import {GiHamburgerMenu} from 'react-icons/gi';
-import {MdOutlineRestaurantMenu} from 'react-icons/md';
 
 
 export const Navbar = () => {
@@ -10,8 +11,7 @@ export const Navbar = () => {
   return (
     <nav className='navbar'>
         <div className="navbar-logo">
-            {/*<img src={} alt='logo'/>*/}
-            <p>LOGO</p>
+            <img src={pubLogo} alt='logo'/>
         </div>
         <ul className='navbar-links'>
             <li className='p__opensans link-items'><Link to='/Home'>Home</Link></li>

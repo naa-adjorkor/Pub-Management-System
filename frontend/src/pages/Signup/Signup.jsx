@@ -1,6 +1,6 @@
 import React from 'react'
+import bg from './../../assets/bg.jpg'
 import './Signup.css'
-import bg from './../../images/bg.jpg'
 
 
 
